@@ -1,0 +1,30 @@
+.backGround {
+    position: relative;
+    z-index: -1;
+    height: 95%;
+    background-image: url('./Assets/Rectangle\ 6.png');
+}
+
+.main-form{
+    padding: 3rem 1rem;
+}
+
+.main-form .form-control {
+    background-color: #00000082 !important;
+    border-radius: 0.5rem !important;
+}
+
+.icon-div img{
+    width: 100%;
+}
+
+.search, .search-btn{
+    border-radius: 1.25rem !important;
+}
+
+.brand{
+    width: 35%;
+}
+.custom-orange{
+    --bs-orange: #fb9d45 !important ;
+}
