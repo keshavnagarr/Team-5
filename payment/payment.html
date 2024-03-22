@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Form</title>
+	<link rel="stylesheet" type="text/css" href="pstyle.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Make Payment:-</h1>
+    </div>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<h3>Payment Method:<button onclick="myFunction()">Dark Mode</button></h3><br>
+			</div>
+			<div class="row1">
+				<div class="column1_left1">
+					<input type="radio" id="paymentMethod" name="paymentMethod" value="Paypal" checked><label>Paypal</label>
+				</div>
+				<div class="column1_right1">
+					<input type="radio" id="paymentMethod" name="paymentMethod" value="creditcard"> <label>Credit Card</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column left">
+					<label for="booklost"><li>Book number:</li></label>
+				</div>
+				<div class="column right">
+					<input type="text" id="booklost" name="paypalEmail" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column left">
+					<label for="paypalEmail"><li>Paypal E-mail:</li></label>
+				</div>
+				<div class="column right">
+					<input type="email" id="paypalEmail" name="paypalEmail" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column left">
+					<label for="creditCardNumber"><li>Credit Card number:</li></label>
+				</div>
+				<div class="column right">
+					<input type="text" id="creditCardNumber" name="creditCardNumber" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column left">
+					<label for="cvvExpiry"><li>CVV and Expiry date:</li></label>
+				</div>
+				<div class="column right">
+					<input type="month" id="cvvExpiry" name="cvvExpiry" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column left">
+					<label for="amount"><li>Amount:</li></label>
+				</div>
+				<div class="column right">
+					<input type="number" id="amount" name="amount" required>
+				</div>
+			</div>
+
+			<div class="paynow">
+				<div class="pay1">
+					<a href=""><input type="submit" value="Back"></a>
+				</div>
+				<div class="pay2">
+					<input type="submit" value="Pay Now">
+				</div>
+			</div>
+		</form>
+	</div>
+	<script>
+		function myFunction(){
+		  var element = document.body;
+		   element.classList.toggle("dark-mode");
+		}
+	  </script>
+</body>
+</html>
