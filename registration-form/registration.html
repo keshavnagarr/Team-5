@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Library Membership Registration... </h1>
+        <h5>Register for a free membership, and read on!<button onclick="myFunction()">Dark Mode</button></h5>
+      </header>
+
+      <div class="line-1"></div>
+      <div class="line-1"></div>
+
+      <form action="#" class="form">
+
+        <div class="column">
+            <div class="input-box">
+              <label>Full Name*</label>
+              <input type="text" placeholder="first-name" required />
+            </div>
+            <div class="input-box">
+              <label>&nbsp;</label>
+              <input type="text" placeholder="last-name" required />
+            </div>
+        </div>
+
+        <div class="input-box">
+            <label>DOB*</label>
+            <input type="date" placeholder="Enter your birth date" required />
+        </div>
+
+        <div class="input1-box">
+        <div class="gender-box">
+          <label>Gender*</label>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <input type="text" placeholder="Address line 2" required />
+          <div class="column">
+            <input type="text" placeholder="City" required />
+            <input type="text" placeholder="state/Region/Provience" required />
+          </div>
+          <div class="column">
+              <input type="number" placeholder="Postal-code" required />
+            <input type="text" placeholder="Country" required />
+          </div>
+        </div>
+
+        <div class="input-box">
+            <label>Email Address*</label>
+            <input type="email" placeholder="Enter email address" required />
+        </div>
+        <div class="input-box">
+            <label>Phone*</label>
+            <input type="number" placeholder="Enter your number" required />
+        </div>
+
+        <div class="input1-box" >
+            <div class="purpose-box">
+              <label>What would you use the library for?*</label><br>
+              <div class="purpose-option">
+                <div class="purpose">
+                  <input type="radio" id="check-reference" name="purpose" checked />
+                  <label for="check-reference">Reference</label>
+                </div>
+                <div class="purpose">
+                  <input type="radio" id="check-in-house reading" name="purpose" />
+                  <label for="check-in-house reading">In-house reading</label>
+                </div>
+                <div class="purpose">
+                  <input type="radio" id="check-borrowing" name="purpose" />
+                  <label for="check-borrowing">Borrowing</label>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="input1-box">
+          <div class="category-box">
+            <label>Which section of the library would you like access to?*</label>
+            <div class="category-option">
+              <div class="category">
+                <input type="radio" id="check-all" name="category" checked />
+                <label for="check-all">All</label>
+              </div>
+              <div class="category">
+                <input type="radio" id="check-magazines" name="category" />
+                <label for="check-magazines">Magazines</label>
+              </div>
+              <div class="category">
+                <input type="radio" id="check-fiction" name="category" />
+                <label for="check-fiction">Fiction</label>
+              </div>
+              <div class="category">
+                <input type="radio" id="check-non-fiction" name="category" />
+                <label for="check-non-fiction">Non-Fiction</label>
+              </div>
+              <div class="category">
+                <input type="radio" id="check-electronic" name="category" />
+                <label for="check-electronic">Electronic</label>
+              </div>
+              <div class="category">
+                <input type="radio" id="check-research & reference" name="category" />
+                <label for="check-research & reference">Research & Reference</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button>Register</button>
+
+      </form>
+    </section>
+    <script>
+      function myFunction(){
+        var element = document.body;
+         element.classList.toggle("dark-mode");
+        
+      }
+    </script>
+  </body>
+</html>
